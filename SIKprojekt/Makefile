@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++11 -I. -lstdc++fs
+CXXFLAGS = -std=c++11 -I. -lstdc++ -lm -D_GLIBCXX_USE_CXX11_ABI=0
 
 router: Router.o RoutingTable.o Receiver.o Sender.o Connection.o
 	$(CXX) $(CXXFLAGS) -o Router Router.o
