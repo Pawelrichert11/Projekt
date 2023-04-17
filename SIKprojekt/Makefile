@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++11 -I.
+CXXFLAGS = -std=c++11 -I. -lstdc++fs
 
 router: Router.o RoutingTable.o Receiver.o Sender.o Connection.o
 	$(CXX) $(CXXFLAGS) -o Router Router.o
